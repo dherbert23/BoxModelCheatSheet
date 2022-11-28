@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="top-title">Box Model Cheat Sheet</h1>
+    </header>
+    <section>
+        <h2 id="box-dimensions">Box Dimensions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td colspan="2" ><span class="tag">margin:</span></td>
+                    <td>Create space outside the box, pushing other boxes.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span class="tag">padding:</span></td>
+                    <td>Create space inside the box, pushing text away from the edge.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span class="tag">width:</span></td>
+                    <td>Control the horizontal space of a box; 
+                        specify value with pixels (<span class="tag">px</span>), or percent (% of the elements it’s inside)</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span class="tag">height:</span></td>
+                    <td>Controls the vertical space of a box. Setting a height should be avoided at all costs. 
+                        Let the content inside the box dictate the height.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span class="tag">overflow:<span></td>
+                    <td>Control how elements that break out the edges of the box are dealt with. 
+                       (<span class="tag">visible</span>, <span class="tag">hidden</span>, <span class="tag">scroll</span>, or <span class="tag">auto</span>)
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" ><span class="tag">box-sizing:</span></td>
+                    <td><span class="tag">content-box</span></td>
+                    <td>Do not use content-box. 
+                        The default box calculation math puts the padding & border outside the width set in CSS. 
+                        This causes all sorts of confusing math solutions on responsive sites 
+                        and just makes our coding life annoying.
+                        </td>
+                </tr>
+                <tr>
+                    <td><span class="tag">border-box</span></td>
+                    <td>Simplifies the responsive math by making the width of a box, 
+                        as set in CSS, not change by adding padding and border.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="Display and Positioning">Display and Positioning</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4"><span class="tag">display</span></td>
+                    <td><span class="tag">inline</span></td>
+                    <td>Flows content together, fitting on the same line if possible.
+                        <span class="tag">margin</span>, <span class="tag">padding</span>, and <span class="tag">width</span> <span class="strong">don’t work.</span> </td>
+                </tr>
+                <tr>
+                    <td><span class="tag">inline-block</span></td>
+                    <td> A hybrid between <span class="tag">block</span> & <span class="tag">inline</span>: fits on the same line, 
+                        allows <span class="tag">padding</span>, <span class="tag">width</span>, etc.
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="tag">block</span></td>
+                    <td>Takes up a whole line by itself.
+                        <span class="tag">margin</span>, <span class="tag">padding</span>, and <span class="tag">width</span> <span class="strong">do work.</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <footer></footer>
+    
+</body>
+</html>
