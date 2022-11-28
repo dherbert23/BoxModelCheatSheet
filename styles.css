@@ -1,0 +1,48 @@
+html {
+    font-family: "Poppins", Helvetica, sans-serif;
+    box-sizing: border-box;}
+
+body {background-color: bisque;}
+
+h1  {
+    color: peru;
+    background-color: azure;
+    font-family: "Permanent Marker", "Helvetica", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+table {
+    width: 650;
+    border: solid 2.5px peru;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border-top: solid 1px rgb(204, 148, 92);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 2px;
+    word-spacing: .1em;
+}
+
+th {
+    background-color: burlywood;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.tag {
+    font-family: monospace;
+    background-color: rgba(254, 253, 233, .5);
+    font-weight: 500;
+    font-size: 17px;
+}
+
